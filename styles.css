@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ :root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+ }
+ body {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--very-light-gray);
+ }
+ header, main {
+  width: 86%;
+ }
+ header p {
+  opacity: 0.3;
+  margin-top: 5rem;
+}
+ #heading, h1 {
+  font-size: 24px;
+ }
+ h1 {
+  opacity: 0.6;
+ }
+ #promotion {
+  margin-top: 1rem;
+  line-height: 1.7;
+ }
+.unit:nth-child(1) {
+  margin-top: 5rem;
+  border-top: 3px solid var(--cyan);
+}
+#unit_team-builder {
+  border-top: 3px solid var(--red);
+  margin-top: 0;
+}
+#unit_karma {
+  border-top: 3px solid var(--orange);
+}
+#unit_calculator {
+  border-top: 3px solid var(--blue);
+}
+.unit {
+  background-color: white;
+  border-radius: 5px;
+  height: 13.7rem;
+  margin-bottom: 1.7rem;
+  box-shadow: 0px 10px 7px  hsla(229, 6%, 66%, 0.4 );
+  text-align: left;
+  padding-top: 1.3rem;
+  padding-left: 2rem;
+}
+.unit h2 {
+  font-size: 19px;
+  opacity: 0.7;
+}
+.unit p {
+  font-size: 13px;
+  opacity: 0.3;
+  margin-bottom: 2rem;
+}
+.unit img {
+  width: 20%;
+  max-width: 100px;
+  margin-left: 68%;
+}
+@media (min-width:1000px) {
+  #heading {
+    font-size: 36px;
+    font-weight: 200;
+    opacity: 0.7;
+   }
+   h1 {
+    font-size: 36px;
+    font-weight: 600;
+   }
+  #promotion {
+    padding: 0 28%;
+    margin-bottom: 3.8rem;
+    margin-top: 0.7rem;
+  }
+  main {
+    width: 77%;
+    height: 32.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #unit_supervisor {
+    margin-top: 0;
+    transform: translateY(64%);
+  }
+  #unit_calculator {
+    margin-top: 0;
+    transform: translateY(64%);
+  }
+  .unit {
+    height: 15.5rem;
+    width: 21.6rem;
+  }
+  .wrapper {
+margin-top: 1.2rem;  }
+  .unit h2 {
+    margin-top: 0.5rem;
+  }
+  .unit p {
+    margin-top: 0.5rem;
+    padding-right: 2rem;
+  }
+  .unit img {
+    margin-top: 0.5rem;
+    width: 22%;
+  }
+}
+.attribution {
+  margin-top: 3rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%); }
